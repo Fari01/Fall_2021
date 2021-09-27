@@ -4,19 +4,19 @@ $validateemail="";
 $validatecheckbox="";
 $validateradio="";
 $v1=$v2=$v3="";
-$name=$email=$gender="";
+$name=$email=$gender=""; 
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
-$name=$_REQUEST["fname"];
+$name=$_REQUEST["name"];
 $email=$_REQUEST["email"];
-if(empty($_REQUEST["fname"]) || (strlen($_REQUEST["fname"])<3))
+if(empty($_REQUEST["name"]) || (strlen($_REQUEST["name"])<3))
 {
     $validatename= "you must enter name";
 
 }
 else
 {
-    $name=$_REQUEST["fname"];
+    $name=$_REQUEST["name"];
 }
 
 if(empty($email) || !preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix",$email))

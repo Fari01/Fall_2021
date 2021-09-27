@@ -17,9 +17,9 @@
 <input type="text" name = "name" > <?php echo $validatename; ?>
 <br>
 <label> Last Name </label> 
-<input type="text" name = "name1"> <?php echo $validateemail; ?>
+<input type="text" name = "name1"> <?php echo $validatename; ?>
 <br>
-<label> age </label> 
+<label> Age </label> 
 <input type="   number" name = "number" placeholder="Enter your age"  >  <br>
 <br>
 <P>Designation: </p>
@@ -64,7 +64,7 @@
   <label for="pass">Password:</label>
   <input type="text" id="pass" name="pass"><br><br>
   <input type="hidden" id="custId" name="custId" value="3487">
-  <?php echo $validateradio; ?>
+  <?php echo $validateemail; ?>
 <br>
 
   <p>Select a file: </p>
